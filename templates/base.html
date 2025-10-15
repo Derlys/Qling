@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>{% block title %}CARD PROFILES{% endblock %}</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='styles.css') }}?v=1" />
+  </head>
+  <body>
+    <header class="container header"></header>
+    <main class="container stack">{% block content %}{% endblock %}</main>
+    <footer class="container footer">
+      <small>Made with 🩷 by a digital nomad</small>
+    </footer>
+    <button id="toggle-theme" class="btn" aria-pressed="false">
+      🌙 Dark mode
+    </button>
+    <script src="{{ url_for('static', filename='app.js') }}?v=1" defer></script>
+  </body>
+</html>

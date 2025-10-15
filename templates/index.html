@@ -1,0 +1,23 @@
+{% extends "base.html" %} {% from "macros.html" import profile_card %} {% block
+content %}
+
+<section class="card quote-card">
+  <h2>Motivational quote</h2>
+  <div
+    id="spinner"
+    class="spinner hidden"
+    role="status"
+    aria-live="polite"
+    aria-label="Cargando"></div>
+  <blockquote id="quote" class="muted">loading phrase...</blockquote>
+  <button id="new-quote" class="btn">💬 New phrase</button>
+</section>
+
+<h1 class="section-title">CARD PROFILES</h1>
+
+<div class="cards">
+  {{ profile_card("Derlys Dominguez", me.name, me.role, "DD") }} {{
+  profile_card("Jane Doe", dummy.name, dummy.email, "JD") }}
+</div>
+
+{% endblock %}

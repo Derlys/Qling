@@ -1,0 +1,16 @@
+{% macro profile_card(title, name, subtitle, avatar_seed) -%}
+<section class="card centered">
+  <h2>{{ title }}</h2>
+  <div class="profile centered">
+    <img
+      src="https://api.dicebear.com/9.x/initials/svg?seed={{ avatar_seed }}"
+      alt="avatar" />
+    <div>
+      <p class="title">{{ name }}</p>
+      {% if subtitle %}
+      <p class="muted">{{ subtitle }}</p>
+      {% endif %}
+    </div>
+  </div>
+</section>
+{%- endmacro %}
