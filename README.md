@@ -30,8 +30,8 @@ A **dark mode toggle** and a small **loading spinner** were added to enhance the
 ### 1️⃣ Clone this repo
 
 ```bash
-git clone https://github.com/<your-username>/qling-micro.git
-cd qling-micro
+git clone git@github.com:Derlys/Qling.git
+cd Qling
 ```
 
 ---
