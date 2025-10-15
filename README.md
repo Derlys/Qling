@@ -64,11 +64,13 @@ flask run --debug
 ## 🖼️ Structure
 
 ```text
-qling-micro/
+QLINK/
 ├─ app.py
 ├─ requirements.txt
 ├─ templates/
-│ └─ index.html
+│ └─ base.html
+| └─ index.html
+| └─ macros.html
 └─ static/
 ├─ styles.css
 └─ app.js
